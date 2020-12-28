@@ -1,0 +1,14 @@
+<div class="card" style="width: 20rem;">
+    <div class="img" style="background-image: url({{beer.image_url}});"></div>
+    <div class="card-body">
+        <h5 class="card-title">{{beer.name}}</h5>
+        <p class="card-text">{{beer.tagline}}</p>
+        <p class="card-text"><small class="text-muted">{{beer.description}}</small></p>
+    </div>
+        {{#if random }}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-muted"><small><b>Food pairing: </b> {{beer.food_pairing}}</small></li>
+            <li class="list-group-item text-muted"><small><b>Tips: </b>{{beer.brewers_tips}}</small></li>
+        </ul>
+        {{/if}}
+</div>
